@@ -1,4 +1,4 @@
-name: Build M3E REAL V7 Android APK
+name: Build M3E REAL V8 Android APK
 
 on:
   workflow_dispatch:
@@ -42,11 +42,11 @@ jobs:
           gradle :app:assembleDebug --stacktrace --no-daemon 2>&1 | tee m3e-build.log
       - name: Prepare APK
         shell: bash
-        run: cp app/build/outputs/apk/debug/app-debug.apk m3e-almas-real-v7.apk
+        run: cp app/build/outputs/apk/debug/app-debug.apk m3e-almas-real-v8.apk
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: m3e-real-v7-${{ github.run_number }}
-          name: "M3E REAL V7 - Build ${{ github.run_number }}"
-          body: "نسخه REAL V7: رفع خطای replaceChildren در Android WebView قدیمی، همراه با Runtime اصلی و سازگاری ES5."
-          files: m3e-almas-real-v7.apk
+          tag_name: m3e-real-v8-${{ github.run_number }}
+          name: "M3E REAL V8 - Build ${{ github.run_number }}"
+          body: "نسخه REAL V8: رفع خطای replaceChildren در Android WebView قدیمی، همراه با Runtime اصلی و سازگاری ES5."
+          files: m3e-almas-real-v8.apk
