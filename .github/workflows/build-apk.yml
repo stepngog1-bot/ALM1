@@ -1,4 +1,4 @@
-name: Build M3E REAL V5 Android APK
+name: Build M3E REAL V6 Android APK
 
 on:
   workflow_dispatch:
@@ -42,11 +42,11 @@ jobs:
           gradle :app:assembleDebug --stacktrace --no-daemon 2>&1 | tee m3e-build.log
       - name: Prepare APK
         shell: bash
-        run: cp app/build/outputs/apk/debug/app-debug.apk m3e-almas-real-v5.apk
+        run: cp app/build/outputs/apk/debug/app-debug.apk m3e-almas-real-v6.apk
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: m3e-real-v5-${{ github.run_number }}
-          name: "M3E REAL V5 - Build ${{ github.run_number }}"
-          body: "نسخه تست آفلاین بر پایه آخرین پروژه واقعی 14050630؛ با Runtime اصلی و دکمه‌های فعال."
-          files: m3e-almas-real-v5.apk
+          tag_name: m3e-real-v6-${{ github.run_number }}
+          name: "M3E REAL V6 - Build ${{ github.run_number }}"
+          body: "نسخه REAL V6 سازگار با Android WebView قدیمی‌تر؛ Runtime اصلی پروژه حفظ شده و JavaScript به ES5 تبدیل شده است."
+          files: m3e-almas-real-v6.apk
