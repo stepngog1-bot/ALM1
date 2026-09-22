@@ -1,1 +1,3 @@
-REAL V5: محتویات این پوشه را در ریشه Repo آپلود کنید. این نسخه از آخرین 14050630.json و Runtime واقعی M3E ساخته شده است.
+M3E REAL V6 compatibility build.
+Upload the CONTENTS of this folder to the repository root (not the ZIP itself).
+Runtime UI/project are preserved; JavaScript runtime is transpiled to ES5 for older Android WebView compatibility.

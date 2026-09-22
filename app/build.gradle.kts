@@ -8,8 +8,8 @@ android {
         applicationId = "com.m3e.almas.realv5"
         minSdk = 26
         targetSdk = 36
-        versionCode = 50
-        versionName = "1.16.5-real-offline"
+        versionCode = 60
+        versionName = "1.16.6-real-offline-compatible"
     }
     buildTypes { release { isMinifyEnabled = false } }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
