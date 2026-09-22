@@ -1,3 +1,3 @@
-M3E REAL V6 compatibility build.
-Upload the CONTENTS of this folder to the repository root (not the ZIP itself).
-Runtime UI/project are preserved; JavaScript runtime is transpiled to ES5 for older Android WebView compatibility.
+M3E REAL V7
+Fix: app.replaceChildren is not a function on older Android WebView.
+Upload the CONTENTS of this folder to the repository root, then run the GitHub Actions workflow.
