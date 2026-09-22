@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
     s.setAllowFileAccess(true); s.setAllowContentAccess(true); s.setCacheMode(WebSettings.LOAD_NO_CACHE);
     webView.setWebViewClient(new WebViewClient()); webView.setWebChromeClient(new WebChromeClient());
     WebView.setWebContentsDebuggingEnabled(true); webView.clearCache(true);
-    webView.loadUrl("file:///android_asset/www/index.html?v=6");
+    webView.loadUrl("file:///android_asset/www/index.html?v=8-visual");
   }
   @Override public void onBackPressed() {
     if (webView != null) webView.evaluateJavascript("if(window.m3eGoBack){window.m3eGoBack();true}else{false}", null);
